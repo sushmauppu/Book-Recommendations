@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="book_style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Book Recommendations</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search books...">
+            <button id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 20 20">
+                    <path fill="currentColor" d="m13.878.282l.348 1.071a2.2 2.2 0 0 0 1.398 1.397l1.072.348l.021.006a.423.423 0 0 1 0 .798l-1.071.348a2.2 2.2 0 0 0-1.399 1.397l-.348 1.07a.423.423 0 0 1-.798 0l-.349-1.07a2.2 2.2 0 0 0-.532-.867a2.2 2.2 0 0 0-.866-.536l-1.071-.348a.423.423 0 0 1 0-.798l1.071-.348a2.2 2.2 0 0 0 1.377-1.397l.348-1.07a.423.423 0 0 1 .799 0m4.905 7.931l-.766-.248a1.58 1.58 0 0 1-.998-.999l-.25-.764a.302.302 0 0 0-.57 0l-.248.764a1.58 1.58 0 0 1-.984.999l-.765.248a.303.303 0 0 0 0 .57l.765.249a1.58 1.58 0 0 1 1 1.002l.248.764a.302.302 0 0 0 .57 0l.249-.764a1.58 1.58 0 0 1 .999-.999l.765-.248a.303.303 0 0 0 0-.57zM9.077 3.03Q8.792 3 8.5 3a5.5 5.5 0 1 0 3.323 9.883l4.147 4.147l.084.073a.75.75 0 0 0 .976-1.133l-4.147-4.147a5.5 5.5 0 0 0 .98-2.099a1.37 1.37 0 0 1-.62-.468c-.16-.22-.24-.481-.24-.752c0-.19.04-.38.12-.55q-.24-.06-.45-.21a1.7 1.7 0 0 1-.32-.321A4.003 4.003 0 0 1 8.5 12.5a4 4 0 1 1 1.085-7.851a1.5 1.5 0 0 1-.325-.332c-.17-.24-.26-.52-.26-.82q0-.245.077-.467" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="categories">
+            <div class="category" data-category="fiction">Fiction</div>
+            <div class="category" data-category="horror">Horror</div>
+            <div class="category" data-category="comedy">Comedy</div>
+            <div class="category" data-category="historical-fiction">Historical Fiction</div>
+            <div class="category" data-category="mystery-thriller">Mystery & Thriller</div>
+            <div class="category" data-category="biography">Biography</div>
+        </div>
+
+        <div id="bookContainer"></div>
+
+        <div class="pagination">
+            <button id="prevPage" disabled>Previous</button>
+            <button id="nextPage">Next</button>
+        </div>
+    </div>
+
+    <script src="book_script.js"></script>
+</body>
+</html>
